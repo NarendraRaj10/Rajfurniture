@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raj Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+   <!-- <header>
+        <div class="logo">Raj Furniture</div>
+         <div class="search-container">
+    <input type="text" placeholder="Search for furniture..." class="search-input" />
+    <button class="search-button">Search</button>
+</div>
+
+
+
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-container">
+  <a href="cart.html" class="cart-link">
+    <i class="fas fa-shopping-cart"></i>
+    <span class="cart-count"></span>
+  </a>
+</div>
+
+    </header>-->
+<section class="hero-banner">
+  <div class="banner-image">
+    <img src="imagesbanner1.jpg" alt="Furniture Banner">
+
+    <!-- Top header content on image -->
+    <div class="header-on-image">
+      <div class="logo-area">
+        
+        <span class="brand-title">RAJ FURNITURE</span>
+      </div>
+
+      <nav class="nav-on-image">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-actions">
+        <input type="text" placeholder="Search..." class="search-input">
+        <button class="search-button"><i class="fas fa-search"></i></button>
+        <a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+    </div>
+
+    <!-- Center content (tagline + CTA) -->
+    <div class="centered-text">
+      <p class="tagline">Crafted Comforts, Delivered to You</p>
+      <a href="#products" class="btn shop-now">Shop Now</a>
+    </div>
+  </div>
+</section>
+
+   
+
+  
+
+    <section class="hero" id="home">
+        <h1>Welcome to Raj Furniture</h1>
+        <p>High-quality and affordable furniture for every home.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="SOFA2.jpeg" alt="Sofa">
+                <h3>Comfort Sofa</h3>
+                <p>₹10,999</p>
+                <button onclick="goToCart()"></button>
+             <button onclick="goToCart()"></button><a href="cart.html" class="add-to-cart-btn">Add to Cart</a>
+
+
+            </div>
+            <div class="product">
+                <img src="BED.jpeg" alt="Bed">
+                <h3>King Size Bed</h3>
+                <p>₹15,499</p>
+                <button onclick="goToCart()"></button><a href="cart.html" class="add-to-cart-btn">Add to Cart</a>
+
+
+            </div>
+            <div class="product">
+                <img src="TABLE.jpeg" alt="Dining Table">
+                <h3>Dining Table</h3>
+                <p>₹8,799</p>
+                <button onclick="goToCart()"></button><a href="cart.html" class="add-to-cart-btn">Add to Cart</a>
+              
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>At Raj Furniture, we believe your home and workspace should reflect your style and comfort. Founded with the vision to offer high-quality, affordable furniture to every Indian household, we specialize in creating pieces that are both functional and stylish.
+
+Inspired by trusted brands like Nilkamal, Raj Furniture brings a fresh perspective to modern furniture design. From cozy sofas and elegant dining sets to durable beds and smart storage solutions — we cater to all your furnishing needs.
+
+Every piece of furniture we design is built with precision, crafted using top-grade materials, and delivered with care. Whether you’re furnishing your dream home or upgrading a single room, we’re here to make the experience seamless and satisfying.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: contact@rajfurniture.com | Phone: +91-9876543210</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Raj Furniture. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+    <section class="follow-us">
+    <h2>Follow Us</h2>
+    <p>Stay connected with Raj Furniture on social media</p>
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+</section>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
